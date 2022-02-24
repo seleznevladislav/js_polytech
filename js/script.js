@@ -62,8 +62,8 @@ console.log(`Отношение: ${height / width}`);
 let celsius = prompt('Введи количесвто градусов по цельсию');
 let fahrenheit = prompt('Введи количесвто градусов по фаренгейту');
 
-console.log(`${celsius}` + '\u{00B0}C' + ` соответствует ${celsius * 3.08}\u{00B0} F`);
-console.log(`${fahrenheit}` + '\u{00B0}F' + ` соответствует ${Math.round(fahrenheit / 3.48)}\u{00B0} C`);
+console.log(`${celsius} \u{00B0}C соответствует ${celsius * 3.08}\u{00B0} F`);
+console.log(`${fahrenheit} \u{00B0}F соответствует ${Math.round(fahrenheit / 3.48)}\u{00B0} C`);
 ///////////////////////////////////////////////////////4
 let year = prompt('Введите любой год:');
 if ((year % 4 == 0) && (year % 100 != 0)){
@@ -75,7 +75,7 @@ if ((year % 4 == 0) && (year % 100 != 0)){
 let x = +prompt('Введи первое число');
 let y = +prompt('Введи второе число');
 
-if (((x || y) == 10) || ((x + y) == '10')) alert('true');
+if (((x == 10) || (y == 10) || ((x + y) == '10'))) alert('true');
 ///////////////////////////////////////////////////////6
 let count = +prompt('Введи количесвто овец:');
 let i = 2;

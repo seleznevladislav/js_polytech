@@ -1,0 +1,32 @@
+.slider{
+	margin: 0 auto;
+	width: 60%;
+	height: 600px;
+}
+#leftArrow{
+	position: absolute;
+	max-width: 40px;
+	max-height: 50px;
+	z-index: 3;
+	left: 17%;
+	bottom: 45%;
+}
+#rightArrow{
+	position: absolute;
+	max-width: 40px;
+	max-height: 50px;
+	z-index: 3;
+	left: 60%;
+	bottom: 45%;
+}
+.svg{
+	max-width: 30px;
+	padding-top: 7px;
+}
+.natureImg{
+	position: absolute;
+	width: 600px;
+	height: 600px;
+	display: none;
+}
+

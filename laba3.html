@@ -23,24 +23,25 @@
 	<div class="laba3">
 		<a href="#">Лабораторная работа №3</a>
 	</div>
-	<div class="modal-window">
-		
-		<form method="POST">
-			<p>
-				<input type="text" id="cityOut" placeholder="Откуда">
-				<input type="text" id="cityIn" placeholder="Куда">
-		  </p>
-			<p><label for="date">Дата отъезда:</label><input type="date" id="date"></p>
-			<label for="Child">Тип билета:</label>
-			<div class="radio-container">
-				<input name="radio" type="radio" id="Child"><label for="Child">Детский</label>
-				<input name="radio" type="radio" checked id="Parent"><label for="Parent">Взрослый</label>
-			</div>
-			<p><input type="submit" value="Найти"></p>
-		</form>
-		<img src="img/cross.svg" alt="крестик" class="cross">
+	<div class="parentDiv">
+		<div class="modal-window">
+			<form method="POST" action="//httpbin.org/post">
+				<p>
+					<input type="text" id="cityOut" placeholder="Откуда" required>
+					<input type="text" id="cityIn" placeholder="Куда" required>
+				</p>
+				<p><label for="date">Дата отъезда:</label><input type="date" id="date"></p>
+				<label for="Child">Тип билета:</label>
+				<div class="radio-container">
+					<input name="radio" type="radio" id="Child"><label for="Child">Детский</label>
+					<input name="radio" type="radio" checked id="Parent"><label for="Parent">Взрослый</label>
+				</div>
+				<p><input type="submit" class='find' value="Найти"></p>
+			</form>
+			<img src="img/cross.svg" alt="крестик" class="cross">
+		</div>
 	</div>
-	<div class="modal-window-btn">Найти билеты</div>
+	<button class="modal-window-btn">Найти билеты</button>
 	<script src="js/script3.js"></script>
 </body>
 </html>

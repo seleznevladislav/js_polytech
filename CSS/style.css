@@ -50,9 +50,6 @@ body{
 	font-size: 20px;
 	border-color: rgb(142, 153, 153);
 }
-/* #date::before{
-	content: " ";
-} */
 .modal-window{
 	position: relative;
 	z-index: 1;
@@ -124,4 +121,25 @@ input[type="radio"]:checked + label {
 	z-index: 2;
 	bottom: 1px;
 	right: 1px;
+}
+.posts{
+	padding-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 80%;
+	margin: 0 auto;
+}
+.listing{
+	list-style-type: none;
+	border: 1px solid rgb(0,0,0);
+	width: 300px;
+	height: 300px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+
+.listingDiv{
+	max-width: 80%;
+	margin: 0 auto;
 }

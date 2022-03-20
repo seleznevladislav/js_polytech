@@ -65,6 +65,8 @@ function checkOut(){
 			inputOut.style.boxShadow = '1px 1px 10px rgba(255,0,0, 0.2)';
 		}
 		else{
+			// inputOut.setCustomValidity('');
+			console.log(inputOut.value)
 			inputOut.style.border = '.5px solid green';
 			inputOut.style.boxShadow = '1px 1px 10px rgba(0,255,0, 0.2)';
 			data[`Город отъезда`] = inputOut.value;
@@ -77,8 +79,8 @@ function checkIn(){
 		inputIn.style.boxShadow = '1px 1px 10px rgba(255,0,0, 0.2)';
 		inputIn.setCustomValidity('Поле должно быть заполненым!');
 	}	else if (!cyrillicPattern.test(inputIn.value)){
-		inputIn.setCustomValidity('Только русские буквы!');
 		document.forms[0].reportValidity();
+		inputIn.setCustomValidity('Только русские буквы!');
 		inputIn.style.border = '.5px solid red';
 		inputIn.style.boxShadow = '1px 1px 10px rgba(255,0,0, 0.2)';
 	}

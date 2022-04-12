@@ -33,3 +33,9 @@ button.addEventListener('click', ()=>{
 	.then( array => show(array))
 	.catch( err =>{ console.error(err)});
 })
+
+
+const a = [] == [];
+const b = [1,3,5] ==  [1,3,5];
+console.log([]==[]);
+console.log(b);

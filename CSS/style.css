@@ -143,3 +143,9 @@ input[type="radio"]:checked + label {
 	max-width: 80%;
 	margin: 0 auto;
 }
+.afr1 {
+	color: red;
+}
+.afr2 {
+	 color: green;
+}
